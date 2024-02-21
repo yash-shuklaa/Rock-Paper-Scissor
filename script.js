@@ -18,10 +18,6 @@ let draw=()=>{
 }
 
 let showWinner=(userWin, userChoice, compChoice)=>{
-    if(userChoice===compChoice){
-        comp.innerText = `Game Drawn. Your Choice is ${userChoice} and Computer's Choice is ${compChoice}`;
-    }
-    else{
         if(userWin){
         userScorePoints++;
         userScore.innerText=userScorePoints;
@@ -32,7 +28,7 @@ let showWinner=(userWin, userChoice, compChoice)=>{
         compScore.innerText=compScorePoints;
         comp.innerText = `You Lost. Computer's ${compChoice} beats Your ${userChoice}`;
     }
-}};
+};
 
 function playGames(userChoice) {
     console.log("userchoice", userChoice);
