@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+
+.content>h1{
+    height: 4vw;
+    text-align: center;
+    background-color: black;
+    color: rgb(254, 254, 254);
+    font-size: 3vw;
+}
+
+.content>h4{
+    font-size: 2vw;
+    padding: 1vw 18vw 0vw 18vw;
+}
+
+.content>p{
+    padding: .5vw 20vw;
+    font-size: 1.2vw;
+}
+
+.content>h2{
+    text-align: center;
+    padding: 1vw 0vw;
+    font-size: 3vw;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+img:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+#rock>img{
+    width: 15vw;
+}
+
+#paper>img{
+    width: 15vw;
+}
+
+#scissor>img{
+    width: 15vw;
+    /* background-color: rgb(254, 254, 254); */
+}
+
+.comp{
+    text-align: center;
+    font-size: 1.8vw;
+    display: none;
+}
+
+body>h6{
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 2vw;
+    padding: 1vw 0;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.score-board{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 4vw;
+    padding: 0vw 0 2vw 4vw;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.user{
+    text-align: center;
+    font-weight: 600;
+}
+
+.com{
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .content>h1{
+        font-size: 7vw;
+        height: fit-content;
+        padding: 1vw 0;
+    }
+    .content>h4{
+        font-size: 4vw;
+        padding-left: 2vw;
+        text-decoration: underline;
+    }
+    .content>p{
+        font-size: 2.5vw;
+        justify-content: left;
+        padding-left: 3vw;
+    }
+    .content>h2{
+        padding: 2vw;
+        font-size: 3.5vw;
+    }
+    .images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rock>img{
+        width: fit-content;
+        height: calc(57vh/3);
+    }
+    .paper>img{
+        width: fit-content;
+        height: calc(57vh/3);
+    }
+    .scissor>img{
+        width: fit-content;
+        height: calc(57vh/3);
+    }
+    .score-board{
+        height: fit-content;
+        align-items: center;
+    }
+}
